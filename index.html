@@ -5,19 +5,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./widget.js"></script>
         <title>Judy Co.</title>
     </head>
     <body>
-        <div class="jumbotron text-center" style="background-color:#FFCC00; color:#fff">
-            <h1>Judy's Support Portal</h1>
-            <p>Questions? Chat with us on bottom right of your screen!</p>
+        <div class="jumbotron text-left" style="background-color:#FFCC00; color:#fff">
+            <h1>Tech Support Onboarding</h1>
+            <p>Questions? Ask the team in the widget on bottom right of your screen!</p>
+        </div>
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Access Requirements
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                      <li><a href="http://directly.com/admin">Directly Platform</a> - SuperAdmin access. </li>
+                      <ul>
+                          <li>As a SuperAdmin, you will be able to create, 
+                                configure, learn, test, and manage the different aspects of Directly's customer company accounts.</li>
+                          <li>To confirm your access, click on your profile icon dropdown and ensure the <b>SuperAdmin</b> option is there</li>
+                      </ul>
+                      <br>
+                      <li><a href="http://directly.slack.com/">Slack</a> - Regular access. 
+                        <ul>
+                            <li>Instant messaging tool used for communicating</li>
+                            <li>Channels to Join:</li> #tech-support, #development, #devops, #services, #customersuccess
+                        </ul>
+                      </li>
+                      <br>
+                      <li>
+                          <a href="https://directly.atlassian.net/projects/DSD/queues/custom/1">Jira</a> - Ticket Queue
+                      </li>
+                      <br>
+                      <li>
+                          <a href="https://directly.atlassian.net/wiki/spaces/SER">Confluence</a> - Documentation
+                      </li>
+                      <ul>
+                          <li>Spaces: Support, Services, Engineering, Customer Success</li>
+                      </ul>
+                      <br>
+                      <li>
+                          <a href="https://directly.atlassian.net/servicedesk/customer/portal/1"> Helpdesk Portal</a> - Submit Support tickets
+                      </li>
+                      <br>
+                      <li>
+                          OpenVPN - required to access certain applications
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
           </div>
 
         
     </body>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
