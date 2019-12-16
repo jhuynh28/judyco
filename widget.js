@@ -16,4 +16,4 @@
             i.attachEvent("onload", function() { y.appendChild(l); });
         }
     })(document, window, "DirectlyRTM", "https://app.directly.com/widgets/rtm/embed.js");
-    DirectlyRTM("config", { id: "2c9982cc6ec9b36c016edc4f4b3e0ec6" });
+    DirectlyRTM("config", { id: "2c9982cc6ec9b36c016edc4f4b3e0ec6", metadata: {category: "color"} });
